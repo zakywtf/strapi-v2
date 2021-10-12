@@ -25,6 +25,22 @@
       }
     },
     {
+      "method": "GET",
+      "path": "/members/filter/:type_member",
+      "handler": "member.findTypeMember",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/members/type_member/count_total",
+      "handler": "member.countTotalEachTypeMember",
+      "config": {
+        "policies": []
+      }
+    },
+    {
       "method": "POST",
       "path": "/members",
       "handler": "member.create",
